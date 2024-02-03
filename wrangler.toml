@@ -1,0 +1,10 @@
+name = "thunderbotcf"
+main = "src/index.ts"
+compatibility_date = "2023-12-31"
+
+[vars]
+DISCORD_APPLICATION_ID = "1188589826530869269"
+DISCORD_PUBLIC_KEY = "2a1ffb823b24dbb535a26045d13a2f3caef3fd1ebf70c16ecff1eda9cb5b14be"
+
+[ai]
+binding = "AI" 
