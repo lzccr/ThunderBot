@@ -19,6 +19,7 @@ import rickroll from "./rickroll";
 import sus from "./sus";
 import modstory from "./modstory";
 import gemini from "./gemini";
+import ud from "./ud";
 
 export interface Env {
   // Example binding to KV. Learn more at https://developers.cloudflare.com/workers/runtime-apis/kv/
@@ -84,6 +85,8 @@ export default {
         return await modstory(interaction, env, ctx);
       } else if (interaction.data.name == "gemini") {
         return await gemini(interaction, env, ctx);
+      } else if (interaction.data.name == "define") {
+        return await ud(interaction, env, ctx);
       } else {
         return new Response("Unknown Command", { status: 400 });
       }

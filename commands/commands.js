@@ -23,6 +23,19 @@ export const MODSTORY_COMMAND = {
   options: [],
 };
 
+export const DEFINE_COMMAND = {
+  name: "define",
+  description: "Get a definition of a word.",
+  options: [
+    {
+      type: 3, // STRING
+      name: "term",
+      description: "The term",
+      required: true,
+    },
+  ],
+};
+
 export const GEMINI_COMMAND = {
   name: "gemini",
   description: "Ask Gemini!",

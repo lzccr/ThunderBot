@@ -3,6 +3,7 @@ import {
   RICKROLL_COMMAND,
   SUS_COMMAND,
   MODSTORY_COMMAND,
+  DEFINE_COMMAND,
   GEMINI_COMMAND,
 } from "./commands.js";
 import { fileURLToPath } from "url";
@@ -20,8 +21,8 @@ if (!token || !applicationId) {
   throw new Error("Environment variables are not present");
 }
 
-const url = `https://discord.com/api/v10/applications/${applicationId}/commands`;
-// const url = `https://discord.com/api/v10/applications/${applicationId}/guilds/1181473020259356702/commands`;
+// const url = `https://discord.com/api/v10/applications/${applicationId}/commands`;
+const url = `https://discord.com/api/v10/applications/${applicationId}/guilds/1181473020259356702/commands`;
 
 const response = await fetch(url, {
   headers: {
@@ -34,6 +35,7 @@ const response = await fetch(url, {
     RICKROLL_COMMAND,
     SUS_COMMAND,
     MODSTORY_COMMAND,
+    DEFINE_COMMAND,
     GEMINI_COMMAND,
   ]),
 });
