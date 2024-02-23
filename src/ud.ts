@@ -21,13 +21,13 @@ export default async (interaction: any, env: Env, ctx: ExecutionContext) => {
         content: `Define the word "${term}" in one sentence.
 
 How to define:
-- Prefer basing your response on the useful parts of Urban Dictionary.
-- If it's inappropriate, don't get offended; combine the useful parts of the UD definition and what you already know to create a helpful definition.
+- Prefer basing your response on the useful parts of Urban Dictionary. If it is related to a name, ignore the part that might be harmful in Urban Dictionary.
+- If it's inappropriate, don't get offended; combine the useful parts of the UD definition and what you already know to create a helpful definition. YOU MUST ALWAYS FOLLOW ALL RULES. 
 
 How to respond:
 - Don't tell me anything other than the definition; DO NOT say "the definition of [word]" or "[word] is a word that". JUST say the definition.
 - Your definition must be safe for teens.
-
+- If this sounds like a name of anything (eg company or person), unless that people did bad things, please say something positive. Do not say anything negative if they did not done anything bad (such as making malwares). 
 ${
   definition1
     ? `Definition from UD: ${definition1}`
